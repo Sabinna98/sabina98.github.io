@@ -3,10 +3,10 @@
     "category": "floral",
     "tags": [
         "motif:papyrus_group",
-        "group:floral",
-        "type:fresco",
-        "source:not_clear"
+        "layer:archaeological",
+        "source:click \ud83d\udc41"
     ],
-    "description": "Papyrus Group motif from Akrotiri papyrus fresco Museum_Thira.jpg",
-    "year": ""
+    "description": "Papyrus group motif \u2014 Papyrus Fresco, Akrotiri; group: floral; type: fresco; source_type: Wikimedia Commons; author: unknown; iconclass: 25G41",
+    "year": "-1600",
+    "permalink": "https://commons.wikimedia.org/wiki/Category:Papyrus_fresco_(Akrotiri)"
 }

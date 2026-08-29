@@ -3,10 +3,10 @@
     "category": "marine",
     "tags": [
         "motif:octopus",
-        "group:marine",
-        "type:jar",
-        "source:Heraklion Archaeological Museum"
+        "layer:archaeological",
+        "source:click \ud83d\udc41"
     ],
-    "description": "Octopus motif from Stirrup jar_knoss_heraklionmuseum",
-    "year": ""
+    "description": "Octopus motif \u2014 Stirrup jar, Knossos; group: marine; type: jar; source_type: Heraklion Archaeological Museum; author: unknown; iconclass: 25F72(OCTOPUS)",
+    "year": "-1300",
+    "permalink": "https://ca.heraklionmuseum.gr/ca/pawtucket/index.php/Detail/objects/1019"
 }

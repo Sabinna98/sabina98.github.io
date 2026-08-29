@@ -3,10 +3,10 @@
     "category": "marine",
     "tags": [
         "motif:murex_shell",
-        "group:marine",
-        "type:vessel",
-        "source:Heraklion Archaeological Museum"
+        "layer:archaeological",
+        "source:click \ud83d\udc41"
     ],
-    "description": "Murex Shell motif from heraklionmuseum Clay goblet with Marine Style decoration",
-    "year": ""
+    "description": "Murex shell motif \u2014 Clay goblet with Marine Style decoration; group: marine; type: goblet; source_type: Heraklion Archaeological Museum; author: unknown; iconclass: 25F72(MUREX)",
+    "year": "-1475",
+    "permalink": "https://ca.heraklionmuseum.gr/ca/pawtucket/index.php/Detail/objects/224"
 }

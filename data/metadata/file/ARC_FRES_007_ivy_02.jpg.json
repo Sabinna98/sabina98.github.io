@@ -1,12 +1,12 @@
 {
     "filename": "ARC_FRES_007_ivy_02.jpg",
-    "category": "vegetal",
+    "category": "floral",
     "tags": [
         "motif:ivy",
-        "group:vegetal",
-        "type:fresco_fragment",
-        "source:Heraklion Archaeological Museum"
+        "layer:archaeological",
+        "source:click \ud83d\udc41"
     ],
-    "description": "Ivy motif from Fresco fragment with ivy stems in a rocky landscape_ knoss_heraklionmuseum",
-    "year": ""
+    "description": "Ivy motif \u2014 Fresco fragment with ivy stems in a rocky landscape, Knossos; group: floral; type: fresco; source_type: Heraklion Archaeological Museum; author: unknown; iconclass: 25G4(IVY)",
+    "year": "-1500",
+    "permalink": "https://ca.heraklionmuseum.gr/ca/pawtucket/index.php/Detail/objects/838"
 }

@@ -3,10 +3,10 @@
     "category": "vegetal",
     "tags": [
         "motif:palm_tree",
-        "group:vegetal",
-        "type:book_illustration",
-        "source:Arthur Evans"
+        "layer:publication",
+        "source:click \ud83d\udc41"
     ],
-    "description": "Palm Tree motif from Place of minos at knossos vol.1 by Evans, Arthur-300",
-    "year": ""
+    "description": "Palm tree motif \u2014 The Palace of Minos at Knossos, vol. 1, p. 300; group: vegetal; type: book_illustration; source_type: Arthur Evans, Place of Minos at Knossos vol.1; iconclass: 25G3(PALM-TREE)",
+    "year": "1921",
+    "permalink": "https://archive.org/details/in.gov.ignca.6667/page/253/mode/2up"
 }

@@ -2,11 +2,11 @@
     "filename": "ARC_FRES_003_papyrus_08.jpg",
     "category": "vegetal",
     "tags": [
-        "motif:papyrus",
-        "group:vegetal",
-        "type:fresco",
-        "source:not_clear"
+        "motif:papyrus_group",
+        "layer:archaeological",
+        "source:click \ud83d\udc41"
     ],
-    "description": "Papyrus motif from The House of the Ladies in Akrotiri, Thera",
-    "year": ""
+    "description": "Papyrus group motif \u2014 House of the Ladies, Akrotiri, Thera; group: vegetal; type: fresco; source_type: Wikimedia Commons; author: unknown; iconclass: 25G41",
+    "year": "-1600",
+    "permalink": "https://commons.wikimedia.org/wiki/File:Wall_painting_of_two_ladies_and_papyrus_plants_from_Akrotiri_(house_of_the_ladies)_-_Thera_MPT_-_05.jpg"
 }

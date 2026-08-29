@@ -2,11 +2,11 @@
     "filename": "ARC_OBJ_002_spiral_01.jpg",
     "category": "geometric",
     "tags": [
-        "motif:spiral",
-        "group:geometric",
-        "type:sarcophagus",
-        "source:Heraklion Archaeological Museum"
+        "motif:spiral_group",
+        "layer:archaeological",
+        "source:click \ud83d\udc41"
     ],
-    "description": "Spiral motif from The Hagia Triada Sarcophagus heraklionmuseum",
-    "year": ""
+    "description": "Spiral group motif \u2014 Hagia Triada Sarcophagus; group: geometric; type: sarcophagus; source_type: Heraklion Archaeological Museum; author: unknown; iconclass: 48A98133",
+    "year": "-1345",
+    "permalink": "https://heraklionmuseum.gr/en/exhibit/the-hagia-triada-sarcophagus/"
 }

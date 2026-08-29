@@ -3,10 +3,10 @@
     "category": "floral",
     "tags": [
         "motif:papyrus_flower",
-        "group:floral",
-        "type:book_illustration",
-        "source:The Prehistoric Tombs of Knossos"
+        "layer:publication",
+        "source:click \ud83d\udc41"
     ],
-    "description": "Papyrus Flower motif from The prehistoric tombs of Knossos-190",
-    "year": ""
+    "description": "Papyrus flower motif \u2014 The Prehistoric Tombs of Knossos, p. 190; group: floral; type: book_illustration; source_type: The Prehistoric Tombs of Knossos; iconclass: 25G41",
+    "year": "1906",
+    "permalink": "https://archive.org/details/prehistorictombs00evan/page/n189/mode/1up"
 }

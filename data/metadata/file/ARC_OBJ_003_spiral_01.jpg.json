@@ -2,11 +2,11 @@
     "filename": "ARC_OBJ_003_spiral_01.jpg",
     "category": "geometric",
     "tags": [
-        "motif:spiral",
-        "group:geometric",
-        "type:larnax",
-        "source:Heraklion Archaeological Museum"
+        "motif:spiral_group",
+        "layer:archaeological",
+        "source:click \ud83d\udc41"
     ],
-    "description": "Spiral motif from chest larnax heraklionmuseum",
-    "year": ""
+    "description": "Spiral group motif \u2014 Chest larnax; group: geometric; type: larnax; source_type: Heraklion Archaeological Museum; author: unknown; iconclass: 48A98133",
+    "year": "-1335",
+    "permalink": "https://heraklionmuseum.gr/en/exhibit/chest-larnax/"
 }

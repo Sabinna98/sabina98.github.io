@@ -3,10 +3,10 @@
     "category": "marine",
     "tags": [
         "motif:octopus",
-        "group:marine",
-        "type:jar",
-        "source:Metropolitan Museum of Art"
+        "layer:archaeological",
+        "source:click \ud83d\udc41"
     ],
-    "description": "Octopus motif from Terracotta stirrup jar with octopus Helladic, Mycenaean ca. 1200\u20131100 BCE \u043c\u0435\u0442\u043c\u0443\u0437\u0435\u0439",
-    "year": ""
+    "description": "Octopus motif \u2014 Terracotta stirrup jar with octopus Helladic, Mycenaean ca. 1200\u20131100 BCE; group: marine; type: jar; source_type: Metropolitan Museum of Art; author: unknown; iconclass: 25F72(OCTOPUS)",
+    "year": "-1150",
+    "permalink": "https://www.metmuseum.org/art/collection/search/254779"
 }
