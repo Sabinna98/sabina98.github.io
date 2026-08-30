@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
+
 <title>About the Project</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+
   :root{
     --paper:#f6f4ee;
     --ink:#16232e;
@@ -15,14 +19,29 @@
     --muted:#5c6b73;
     --card:#fffefb;
 
-    --serif:"Iowan Old Style","Palatino Linotype",
-            "Book Antiqua",Palatino,Georgia,serif;
+    --serif:
+      "Iowan Old Style",
+      "Palatino Linotype",
+      "Book Antiqua",
+      Palatino,
+      Georgia,
+      serif;
 
-    --sans:-apple-system,BlinkMacSystemFont,
-           "Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --sans:
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif;
 
-    --mono:"SFMono-Regular",Menlo,Consolas,
-           "Liberation Mono",monospace;
+    --mono:
+      "SFMono-Regular",
+      Menlo,
+      Consolas,
+      "Liberation Mono",
+      monospace;
   }
 
   *{
@@ -42,13 +61,14 @@
   nav{
     display:flex;
     align-items:center;
-    flex-wrap:wrap;
-    gap:18px;
+    gap:22px;
 
     padding:16px 32px;
 
     background:var(--paper);
     border-bottom:1px solid var(--line);
+
+    font-size:12px;
   }
 
   nav .brand{
@@ -60,6 +80,7 @@
     text-decoration:none;
     text-transform:none;
     letter-spacing:0;
+
     white-space:nowrap;
   }
 
@@ -73,66 +94,48 @@
     text-transform:uppercase;
     letter-spacing:.1em;
     font-size:11px;
+
     white-space:nowrap;
   }
 
-  nav a:hover,
-  nav a.on{
+  nav a.on,
+  nav a:hover{
     color:var(--sea);
   }
 
-  /* Main page */
+  /* Main content */
 
   .wrap{
-    max-width:1180px;
+    max-width:980px;
     margin:0 auto;
-    padding:70px 36px 80px;
+    padding:56px 24px 80px;
   }
 
   /* Title */
 
   .page-title{
-    margin:0;
-    max-width:none;
+    width:100%;
+    margin:0 0 24px;
 
     font-family:var(--serif);
     font-weight:600;
+    font-size:42px;
+    line-height:1.12;
+    letter-spacing:-.012em;
+
     color:var(--ink);
   }
 
-  .title-line-one{
+  .page-title span{
     display:block;
-    white-space:nowrap;
-
-    font-size:clamp(42px,4vw,58px);
-    line-height:1.08;
-    letter-spacing:-.018em;
-  }
-
-  .title-line-two{
-    display:block;
-    white-space:nowrap;
-
-    margin-top:16px;
-
-    font-family:var(--sans);
-    font-size:clamp(18px,1.65vw,24px);
-    line-height:1.35;
-    font-weight:400;
-    letter-spacing:0;
-  }
-
-  .title-line-two strong{
-    font-weight:700;
-    color:var(--sea);
   }
 
   /* Project status */
 
   .project-note{
-    max-width:1000px;
-    margin:28px 0 34px;
-    padding-left:14px;
+    max-width:900px;
+    margin:0 0 34px;
+    padding:5px 0 5px 18px;
 
     border-left:3px solid var(--ochre);
 
@@ -144,13 +147,14 @@
   /* Text */
 
   p{
+    max-width:68ch;
     margin:0 0 14px;
-    max-width:72ch;
+
     color:#26333d;
   }
 
   .lead{
-    max-width:1000px;
+    max-width:760px;
 
     font-size:17px;
     line-height:1.75;
@@ -175,7 +179,7 @@
   .stats{
     display:flex;
 
-    margin:36px 0;
+    margin:34px 0;
 
     border-top:1px solid var(--line);
     border-bottom:1px solid var(--line);
@@ -205,6 +209,7 @@
     font-size:10px;
     letter-spacing:.08em;
     text-transform:uppercase;
+
     color:var(--muted);
   }
 
@@ -252,28 +257,24 @@
   }
 
   a.btn:hover{
-    opacity:.88;
+    opacity:.9;
   }
 
-  /* Medium screens */
+  /* Tablet */
 
-  @media(max-width:1050px){
+  @media(max-width:900px){
+
+    nav{
+      flex-wrap:wrap;
+      gap:12px 18px;
+    }
 
     nav .sp{
       display:none;
     }
 
-    .title-line-one,
-    .title-line-two{
-      white-space:normal;
-    }
-
-    .title-line-one{
-      max-width:900px;
-    }
-
-    .title-line-two{
-      max-width:900px;
+    .page-title{
+      font-size:36px;
     }
   }
 
@@ -283,8 +284,8 @@
 
     nav{
       align-items:flex-start;
-      gap:10px 16px;
       padding:14px 20px;
+      gap:10px 16px;
     }
 
     nav .brand{
@@ -293,18 +294,20 @@
     }
 
     .wrap{
-      padding:42px 22px 70px;
+      padding:40px 22px 70px;
     }
 
-    .title-line-one{
-      font-size:34px;
-      line-height:1.1;
+    .page-title{
+      font-size:30px;
+      line-height:1.15;
     }
 
-    .title-line-two{
-      margin-top:14px;
-      font-size:18px;
-      line-height:1.4;
+    .page-title span{
+      display:inline;
+    }
+
+    .page-title span::after{
+      content:" ";
     }
 
     .project-note{
@@ -323,39 +326,60 @@
       min-width:33.333%;
     }
   }
+
 </style>
 </head>
 
 <body>
 
 <nav>
+
   <a class="brand" href="about.html">
     Minoan Motif Reception
   </a>
 
   <span class="sp"></span>
 
-  <a class="on" href="about.html">About</a>
-  <a href="explore.html">Explore</a>
-  <a href="data.html">Data &amp; methods</a>
-  <a href="metadata.html">Browse Metadata</a>
-  <a href="sources.html">Sources &amp; rights</a>
-  <a href="index.html">Visualization</a>
+  <a class="on" href="about.html">
+    About
+  </a>
+
+  <a href="explore.html">
+    Explore
+  </a>
+
+  <a href="data.html">
+    Data &amp; methods
+  </a>
+
+  <a href="metadata.html">
+    Browse Metadata
+  </a>
+
+  <a href="sources.html">
+    Sources &amp; rights
+  </a>
+
+  <a href="index.html">
+    Visualization
+  </a>
+
 </nav>
 
 <div class="wrap">
 
   <h1 class="page-title">
 
-    <span class="title-line-one">
+    <span>
       The Reception of Minoan Motifs in
     </span>
 
-    <span class="title-line-two">
+    <span>
       Modern and Contemporary Textiles and Fashion:
-      <strong>
-        Digital Analysis through Computational Image Clustering
-      </strong>
+    </span>
+
+    <span>
+      Digital Analysis through Computational Image Clustering
     </span>
 
   </h1>
@@ -404,7 +428,9 @@
 
   </div>
 
-  <h2>What the archive holds</h2>
+  <h2>
+    What the archive holds
+  </h2>
 
   <p>
     The corpus is organised through three historical layers: archaeological
@@ -417,7 +443,9 @@
     stays tied to its object and its source.
   </p>
 
-  <h2>The method</h2>
+  <h2>
+    The method
+  </h2>
 
   <p>
     The crops are arranged by the visualisation tool PixPlot, which places
