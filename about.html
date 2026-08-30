@@ -4,44 +4,337 @@
 <meta charset="UTF-8">
 <title>About the Project</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
   :root{
-    --paper:#f6f4ee;--ink:#16232e;--sea:#2f5d6e;--ochre:#b0842f;
-    --line:#dcd6c8;--muted:#5c6b73;--card:#fffefb;
-    --serif:"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,Georgia,serif;
-    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    --mono:"SFMono-Regular",Menlo,Consolas,"Liberation Mono",monospace;
+    --paper:#f6f4ee;
+    --ink:#16232e;
+    --sea:#2f5d6e;
+    --ochre:#b0842f;
+    --line:#dcd6c8;
+    --muted:#5c6b73;
+    --card:#fffefb;
+
+    --serif:"Iowan Old Style","Palatino Linotype",
+            "Book Antiqua",Palatino,Georgia,serif;
+
+    --sans:-apple-system,BlinkMacSystemFont,
+           "Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+
+    --mono:"SFMono-Regular",Menlo,Consolas,
+           "Liberation Mono",monospace;
   }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.6}
-  nav{display:flex;align-items:center;gap:22px;padding:16px 32px;border-bottom:1px solid var(--line);font-size:12px;background:var(--paper)}
-  nav .brand{font-family:var(--serif);font-weight:600;font-size:13px;color:var(--ink)}
-  nav .sp{flex:1}
-  nav a{color:var(--muted);text-decoration:none;text-transform:uppercase;letter-spacing:.1em;font-size:11px}
-  nav a.on{color:var(--sea)}
-  .wrap{max-width:820px;margin:0 auto;padding:56px 24px 80px}
-  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ochre);margin-bottom:14px}
-  h1{font-family:var(--serif);font-weight:600;font-size:38px;line-height:1.1;letter-spacing:-.01em;margin:0 0 20px;max-width:18ch}
-  h2{font-family:var(--serif);font-weight:600;font-size:22px;margin:38px 0 8px}
-  p{margin:0 0 14px;max-width:68ch;color:#26333d}
-  .lead{font-size:17px}
-  .stats{display:flex;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:34px 0}
-  .stat{flex:1;padding:16px 8px;border-right:1px solid var(--line)}
-  .stat:last-child{border-right:0}
-  .stat .n{font-family:var(--serif);font-size:28px;line-height:1}
-  .stat .l{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:6px}
-  .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
-  a.btn{display:inline-block;padding:12px 18px;background:var(--sea);color:#fff;text-decoration:none;border-radius:3px;font-size:13px;border:1px solid var(--sea)}
-  a.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
-  a.btn:hover{opacity:.9}
-  .note{background:#eef1ec;border:1px solid var(--line);border-radius:3px;padding:14px 16px;font-size:14px;color:#38454d;margin-top:20px}
-  @media(max-width:640px){.stats{flex-wrap:wrap}.stat{min-width:33%}h1{font-size:30px}}
+
+  *{
+    box-sizing:border-box;
+  }
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--sans);
+    line-height:1.6;
+  }
+
+  /* Navigation */
+
+  nav{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:18px;
+
+    padding:16px 32px;
+
+    background:var(--paper);
+    border-bottom:1px solid var(--line);
+  }
+
+  nav .brand{
+    font-family:var(--serif);
+    font-weight:600;
+    font-size:13px;
+
+    color:var(--ink);
+    text-decoration:none;
+    text-transform:none;
+    letter-spacing:0;
+    white-space:nowrap;
+  }
+
+  nav .sp{
+    flex:1;
+  }
+
+  nav a{
+    color:var(--muted);
+    text-decoration:none;
+    text-transform:uppercase;
+    letter-spacing:.1em;
+    font-size:11px;
+    white-space:nowrap;
+  }
+
+  nav a:hover,
+  nav a.on{
+    color:var(--sea);
+  }
+
+  /* Main page */
+
+  .wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:70px 36px 80px;
+  }
+
+  /* Title */
+
+  .page-title{
+    margin:0;
+    max-width:none;
+
+    font-family:var(--serif);
+    font-weight:600;
+    color:var(--ink);
+  }
+
+  .title-line-one{
+    display:block;
+    white-space:nowrap;
+
+    font-size:clamp(42px,4vw,58px);
+    line-height:1.08;
+    letter-spacing:-.018em;
+  }
+
+  .title-line-two{
+    display:block;
+    white-space:nowrap;
+
+    margin-top:16px;
+
+    font-family:var(--sans);
+    font-size:clamp(18px,1.65vw,24px);
+    line-height:1.35;
+    font-weight:400;
+    letter-spacing:0;
+  }
+
+  .title-line-two strong{
+    font-weight:700;
+    color:var(--sea);
+  }
+
+  /* Project status */
+
+  .project-note{
+    max-width:1000px;
+    margin:28px 0 34px;
+    padding-left:14px;
+
+    border-left:3px solid var(--ochre);
+
+    color:#765917;
+    font-size:13px;
+    line-height:1.65;
+  }
+
+  /* Text */
+
+  p{
+    margin:0 0 14px;
+    max-width:72ch;
+    color:#26333d;
+  }
+
+  .lead{
+    max-width:1000px;
+
+    font-size:17px;
+    line-height:1.75;
+
+    text-align:justify;
+    text-align-last:left;
+    text-justify:inter-word;
+    hyphens:auto;
+  }
+
+  h2{
+    margin:38px 0 8px;
+
+    font-family:var(--serif);
+    font-weight:600;
+    font-size:22px;
+    line-height:1.25;
+  }
+
+  /* Statistics */
+
+  .stats{
+    display:flex;
+
+    margin:36px 0;
+
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+
+  .stat{
+    flex:1;
+    padding:16px 8px;
+
+    border-right:1px solid var(--line);
+  }
+
+  .stat:last-child{
+    border-right:0;
+  }
+
+  .stat .n{
+    font-family:var(--serif);
+    font-size:28px;
+    line-height:1;
+  }
+
+  .stat .l{
+    margin-top:6px;
+
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--muted);
+  }
+
+  /* Critical note */
+
+  .note{
+    margin-top:20px;
+    padding:14px 16px;
+
+    background:#eef1ec;
+    border:1px solid var(--line);
+    border-radius:3px;
+
+    font-size:14px;
+    color:#38454d;
+  }
+
+  /* Buttons */
+
+  .btns{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+
+    margin-top:26px;
+  }
+
+  a.btn{
+    display:inline-block;
+    padding:12px 18px;
+
+    background:var(--sea);
+    border:1px solid var(--sea);
+    border-radius:3px;
+
+    color:#fff;
+    text-decoration:none;
+    font-size:13px;
+  }
+
+  a.btn.ghost{
+    background:transparent;
+    color:var(--ink);
+    border-color:var(--ink);
+  }
+
+  a.btn:hover{
+    opacity:.88;
+  }
+
+  /* Medium screens */
+
+  @media(max-width:1050px){
+
+    nav .sp{
+      display:none;
+    }
+
+    .title-line-one,
+    .title-line-two{
+      white-space:normal;
+    }
+
+    .title-line-one{
+      max-width:900px;
+    }
+
+    .title-line-two{
+      max-width:900px;
+    }
+  }
+
+  /* Mobile */
+
+  @media(max-width:640px){
+
+    nav{
+      align-items:flex-start;
+      gap:10px 16px;
+      padding:14px 20px;
+    }
+
+    nav .brand{
+      width:100%;
+      margin-bottom:4px;
+    }
+
+    .wrap{
+      padding:42px 22px 70px;
+    }
+
+    .title-line-one{
+      font-size:34px;
+      line-height:1.1;
+    }
+
+    .title-line-two{
+      margin-top:14px;
+      font-size:18px;
+      line-height:1.4;
+    }
+
+    .project-note{
+      font-size:12px;
+    }
+
+    .lead{
+      text-align:left;
+    }
+
+    .stats{
+      flex-wrap:wrap;
+    }
+
+    .stat{
+      min-width:33.333%;
+    }
+  }
 </style>
 </head>
+
 <body>
+
 <nav>
-  <a class="brand" href="about.html">Minoan Motif Reception</a>
+  <a class="brand" href="about.html">
+    Minoan Motif Reception
+  </a>
+
   <span class="sp"></span>
+
   <a class="on" href="about.html">About</a>
   <a href="explore.html">Explore</a>
   <a href="data.html">Data &amp; methods</a>
@@ -53,17 +346,18 @@
 <div class="wrap">
 
   <h1 class="page-title">
-    <span class="title-line">
+
+    <span class="title-line-one">
       The Reception of Minoan Motifs in
     </span>
 
-    <span class="title-line">
+    <span class="title-line-two">
       Modern and Contemporary Textiles and Fashion:
+      <strong>
+        Digital Analysis through Computational Image Clustering
+      </strong>
     </span>
 
-    <strong class="title-method">
-      Digital Analysis through Computational Image Clustering
-    </strong>
   </h1>
 
   <p class="project-note">
@@ -82,27 +376,87 @@
   </p>
 
   <div class="stats">
-    <div class="stat"><div class="n">180</div><div class="l">motif crops</div></div>
-    <div class="stat"><div class="n">3</div><div class="l">corpus layers</div></div>
-    <div class="stat"><div class="n">5</div><div class="l">broad groups</div></div>
-    <div class="stat"><div class="n">23</div><div class="l">specific motifs</div></div>
-    <div class="stat"><div class="n">10</div><div class="l">hotspots</div></div>
+
+    <div class="stat">
+      <div class="n">180</div>
+      <div class="l">motif crops</div>
+    </div>
+
+    <div class="stat">
+      <div class="n">3</div>
+      <div class="l">corpus layers</div>
+    </div>
+
+    <div class="stat">
+      <div class="n">5</div>
+      <div class="l">broad groups</div>
+    </div>
+
+    <div class="stat">
+      <div class="n">23</div>
+      <div class="l">specific motifs</div>
+    </div>
+
+    <div class="stat">
+      <div class="n">10</div>
+      <div class="l">hotspots</div>
+    </div>
+
   </div>
 
   <h2>What the archive holds</h2>
-  <p>The corpus is organised through three historical layers: archaeological objects from Bronze Age Crete and the Aegean; the early publications through which their motifs first circulated; and the reception of those motifs in the textiles and garments of Mariano Fortuny, Léon Bakst, Florentini Kaloutsi, and Karl Lagerfeld’s Chloé Spring–Summer 1994 collection. Individual motifs were extracted as cropped units and described through a structured metadata scheme, so that each fragment stays tied to its object and its source.</p>
+
+  <p>
+    The corpus is organised through three historical layers: archaeological
+    objects from Bronze Age Crete and the Aegean; the early publications
+    through which their motifs first circulated; and the reception of those
+    motifs in the textiles and garments of Mariano Fortuny, Léon Bakst,
+    Florentini Kaloutsi, and Karl Lagerfeld’s Chloé Spring–Summer 1994
+    collection. Individual motifs were extracted as cropped units and
+    described through a structured metadata scheme, so that each fragment
+    stays tied to its object and its source.
+  </p>
 
   <h2>The method</h2>
-  <p>The crops are arranged by the visualisation tool PixPlot, which places images by computed visual similarity. The result is read against the metadata: the algorithm proposes a proximity, and the researcher checks it through source evidence, provenance, and close visual analysis. Computed nearness indicates a shared visual form, and it does not, on its own, establish a historical relation.</p>
 
-  <div class="note">The visualisation is an instrument for exploration and comparison, not a substitute for art-historical and archaeological interpretation. Its groupings are proposals; the historical reading is completed by the user, through the record and the source behind each image.</div>
+  <p>
+    The crops are arranged by the visualisation tool PixPlot, which places
+    images by computed visual similarity. The result is read against the
+    metadata: the algorithm proposes a proximity, and the researcher checks
+    it through source evidence, provenance, and close visual analysis.
+    Computed nearness indicates a shared visual form, and it does not, on its
+    own, establish a historical relation.
+  </p>
+
+  <div class="note">
+    The visualisation is an instrument for exploration and comparison, not a
+    substitute for art-historical and archaeological interpretation. Its
+    groupings are proposals; their historical significance is evaluated
+    through the records, parent images, publications, and external sources
+    connected to the individual crops.
+  </div>
 
   <div class="btns">
-    <a class="btn" href="index.html">Open the visualization</a>
-    <a class="btn ghost" href="explore.html">How the archive works</a>
-    <a class="btn ghost" href="data.html">Data &amp; documentation</a>
-    <a class="btn ghost" href="metadata.html">Browse Metadata</a>
+
+    <a class="btn" href="index.html">
+      Open the visualization
+    </a>
+
+    <a class="btn ghost" href="explore.html">
+      How the archive works
+    </a>
+
+    <a class="btn ghost" href="data.html">
+      Data &amp; documentation
+    </a>
+
+    <a class="btn ghost" href="metadata.html">
+      Browse Metadata
+    </a>
+
   </div>
+
 </div>
+
 </body>
 </html>
