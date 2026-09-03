@@ -4,151 +4,90 @@
 
 A non-commercial research dataset developed as part of a Master’s thesis in Digital and Public Humanities at Ca’ Foscari University of Venice.
 
-**Interactive PixPlot visualisation:**  
-[Open the Minoan Motif Reception visualisation](https://sabinna98.github.io/sabina98.github.io/index.html)
+The repository contains the image corpus, metadata, and computational outputs used to investigate the reception of Minoan and Aegean Bronze Age motifs in modern textiles, stage costume, and fashion.
 
-**Project documentation and data interface:**  
-[Open the project website](https://sabinna98.github.io/sabina98.github.io/about.html)
+**Interactive visualisation:**  
+[Open the published PixPlot environment](https://sabinna98.github.io/sabina98.github.io/index.html)
 
 ---
 
-## Dataset overview
+## Dataset
 
-This repository contains the image corpus, metadata, and derived computational data used to investigate the reception of Minoan and Aegean Bronze Age motifs in modern textiles, stage costume, and fashion.
-
-The dataset connects material from three historical layers:
+The final computational corpus contains **180 motif crops** organised through three historical layers:
 
 - **Archaeological** — Minoan and Aegean Bronze Age objects and frescoes;
-- **Publication** — images reproduced in archaeological books, plates, and early publications;
+- **Publication** — images from archaeological books, plates, and other publications;
 - **Reception** — modern and contemporary textiles, costume, and fashion.
 
-The final computational corpus contains **180 motif crops**. Each crop isolates a motif from a larger parent image while preserving its connection to the original object or source.
+The corpus contains **5 broad motif groups** and **23 specific motif terms**.
 
-The corpus currently includes:
+Each motif crop remains connected to its parent image and to descriptive information concerning its source, object type, chronology, corpus layer, motif classification, author or designer where applicable, and institutional or bibliographic reference.
 
-- **180** motif crops;
-- **3** corpus layers;
-- **5** broad motif groups;
-- **23** specific motif terms;
-- **10** stored PixPlot hotspots.
-
-The dataset was constructed for the comparative study of visual transmission across archaeological material, printed reproductions, and later design.
+The crop is used as the computational unit because it allows individual motifs to be compared without the visual complexity of the complete object or publication page.
 
 ---
 
-## Data structure
+## Method
 
-The repository preserves both descriptive metadata and files generated during the computational workflow.
+The workflow combines manual corpus construction with computational image analysis:
 
-Each motif crop is associated with information such as:
+1. selection and documentation of relevant source images;
+2. extraction of individual motifs from parent images;
+3. construction of structured metadata;
+4. computational visualisation with PixPlot;
+5. comparison of visual proximity with motif classifications, provenance, publications, and close visual analysis.
 
-- filename;
-- parent image;
-- corpus layer;
-- source type;
-- source reference;
-- object type;
-- date or period;
-- place of origin;
-- current location;
-- author or designer, where applicable;
-- broad motif group;
-- specific motif classification;
-- bibliographic or institutional source;
-- links to external records, where available.
+The project follows a human-in-the-loop approach. Computational methods organise images according to visual similarity, while identification of motifs and historical interpretation remain dependent on source evidence and researcher validation.
 
-The connection between a crop and its parent image is retained so that the computationally analysed fragment can be traced back to its original visual and historical context.
+Visual proximity in the resulting projection does not by itself demonstrate a historical relationship or direct influence.
 
 ---
 
 ## Repository contents
 
-The repository includes the main files required to inspect the corpus and reconstruct the published visualisation.
+The repository preserves the principal data and computational outputs associated with the final corpus, including:
 
-These include:
+- master metadata;
+- PixPlot metadata;
+- processed motif crops;
+- image-list data;
+- fixed UMAP layout coordinates;
+- PixPlot hotspot data;
+- files used for the published data interfaces and visualisation.
 
-- **master metadata** — the fuller descriptive dataset used during corpus construction;
-- **PixPlot metadata** — the metadata supplied to the visualisation environment;
-- **processed motif crops** — the 180 images used in the final computational corpus;
-- **UMAP coordinates** — the fixed two-dimensional coordinates of the published arrangement;
-- **image list** — the correspondence between images and the generated PixPlot data;
-- **hotspot data** — stored membership information for the ten PixPlot hotspots;
-- **HTML, CSS, and JavaScript files** — the interface used to provide access to the data and visualisation.
-
-The fixed UMAP coordinates are preserved because a new computational run can produce a different two-dimensional arrangement even when the underlying corpus remains unchanged.
+The fixed UMAP coordinates preserve the arrangement analysed in the thesis. Re-running the computational workflow may generate a different two-dimensional projection.
 
 ---
 
-## Computational visualisation
+## Software
 
-The corpus was visualised with **PixPlot**, using image embeddings and UMAP dimensionality reduction to arrange the motif crops according to computed visual similarity.
+The main visualisation was created with **PixPlot**, an open-source tool for exploring large image collections through image embeddings and dimensionality reduction.
 
-[**Open the interactive PixPlot visualisation →**](https://sabinna98.github.io/sabina98.github.io/index.html)
+PixPlot source code and documentation:  
+[pleonard212/pix-plot on GitHub](https://github.com/pleonard212/pix-plot)
 
-The visualisation can be used to:
-
-- inspect the overall distribution of the 180 motif crops;
-- move between visually proximate images;
-- examine PixPlot hotspots;
-- filter and compare images using metadata;
-- trace relationships across archaeological, publication, and reception material.
-
-Spatial proximity in the projection should not be interpreted as evidence of historical influence on its own. The computational arrangement functions as a discovery and comparison environment; possible relationships must be checked against metadata, provenance, publications, and close visual analysis.
+Additional Python scripts were used for motif cropping and for generating metadata-coloured point maps from the fixed UMAP coordinates.
 
 ---
 
-## Corpus construction
+## Access to the data
 
-The computational unit of the dataset is the **motif crop**, rather than the complete object or source image.
+The published interface provides several ways of inspecting the corpus:
 
-Motifs were extracted from parent images in order to reduce the influence of unrelated visual information and make recurrent ornamental and figurative forms more directly comparable.
+- [Interactive PixPlot visualisation](https://sabinna98.github.io/sabina98.github.io/index.html)
+- [Browse Metadata](https://sabinna98.github.io/sabina98.github.io/metadata.html)
+- [Data & Methods](https://sabinna98.github.io/sabina98.github.io/data.html)
+- [Sources & Rights](https://sabinna98.github.io/sabina98.github.io/sources.html)
 
-The workflow consisted of:
-
-1. identifying relevant archaeological, publication, and reception material;
-2. recording source and object metadata;
-3. extracting individual motif crops from parent images;
-4. assigning descriptive motif categories;
-5. preparing image and metadata files for PixPlot;
-6. generating the computational visualisation;
-7. comparing computed proximity with metadata and art-historical evidence.
-
-The dataset therefore combines manually constructed art-historical metadata with computational visual organisation.
+These interfaces provide access to and documentation for the research data preserved in this repository.
 
 ---
 
-## Motif classification
+## Reuse
 
-Two levels of motif description are retained in the metadata.
+The workflow can be adapted to other image-based cultural heritage collections in which visual details need to be extracted, described through metadata, and compared computationally.
 
-**Broad motif groups** provide a higher-level classification for comparison across the corpus, while **specific motif terms** preserve more detailed distinctions between individual forms.
-
-The classifications were assigned manually on the basis of visual analysis and source research. They are independent of the groups produced by the computational projection and can therefore be used to compare human classification with computed visual proximity.
-
----
-
-## Reuse and reproducibility
-
-The repository is intended to preserve the data structure and computational outputs associated with the thesis and to make the workflow inspectable and reusable.
-
-The general workflow — construction of an image corpus, extraction of visual details, metadata modelling, computational image arrangement, and comparison between visual proximity and descriptive categories — can be adapted to other image-based cultural heritage collections.
-
-The stored coordinates reproduce the arrangement used in the final research project. Re-running PixPlot or UMAP may result in a different projection and should therefore be treated as a new computational run rather than an exact reproduction of the published map.
-
----
-
-## Web interfaces
-
-The GitHub Pages environment provides several interfaces for inspecting the dataset:
-
-- [**Interactive PixPlot visualisation**](https://sabinna98.github.io/sabina98.github.io/index.html)
-- [**About the project**](https://sabinna98.github.io/sabina98.github.io/about.html)
-- [**Explore the archive**](https://sabinna98.github.io/sabina98.github.io/explore.html)
-- [**Data & Methods**](https://sabinna98.github.io/sabina98.github.io/data.html)
-- [**Browse Metadata**](https://sabinna98.github.io/sabina98.github.io/metadata.html)
-- [**Sources & Rights**](https://sabinna98.github.io/sabina98.github.io/sources.html)
-
-These pages provide access to the repository data and documentation; they are not the primary research dataset themselves.
+The dataset itself is specific to the reception history examined in the thesis. Its classifications and source relationships were created for this research context and should not be treated as a universal taxonomy of Minoan ornament.
 
 ---
 
@@ -166,7 +105,7 @@ This repository was created for non-commercial academic research.
 
 Copyright and reproduction rights for source images remain with the respective museums, archives, photographers, publishers, designers, or other rights holders.
 
-Metadata, links, and research annotations provided in this repository do not grant permission to reproduce source images. Users wishing to reuse an image should consult its original institutional or bibliographic source and the corresponding rights statement.
+Metadata, links, and research annotations included in the repository do not grant permission for further reproduction or reuse of source images. Users should consult the original institutional or bibliographic record and its rights statement before reusing an image.
 
 ---
 
